@@ -1,0 +1,21 @@
+.robot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.NoBorderLArm {
+    margin-right:  -1em;
+}
+.NoBorderHead {
+    margin-right: -1em;
+}
+.NoBorderRArm {
+    margin-left: 1em;
+    margin-right: 1.4em;
+}
+.NoBorderBattery {
+    margin-right: 1.4em;
+}
+.NoBorderBODY {
+    margin-right: 0.5em;
+}
