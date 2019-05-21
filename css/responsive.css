@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #01B4FD;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+.site {
+    background-image: url("../images/Background.svg");
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.skyline {
+    width: 100%;
+    display: none;
+}
+
+
+.logo {
+    position: absolute;
+}
+
+.logo {
+    width: 4em;
+
+    top: 1em;
+    left: 1em;
+}
+
+
+
+/* -----------------------------------------------------------------------------
+
+                                RESPONSIVE
+
+----------------------------------------------------------------------------- */
+
+
+
+/*
+Mobile Landscape
+----------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 820px) and (max-height: 420px) and  (orientation: landscape) {
+    .logo {
+        width: 2em;
+
+        top: 0.5em;
+        left: 0.5em;
+    }
+}
+
+
+
+
+
+
+/*
+Mobile Portrait
+------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .site {
+        background-image: url("../images/MobileBackground.svg");
+    }
+    .skyline {
+        display: block;
+    }
+}

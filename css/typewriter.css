@@ -1,0 +1,31 @@
+#ctaTxtWrapper p, #txtIn6 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    color: white;}
+/*
+Adding content to p.
+----------------------------------------------------------------------------- */
+.firstline::after {
+    content: '';
+    display: inline-block;
+}
+/*
+Mobile Portrait
+------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    #ctaTxtWrapper p, #txtIn6 p {
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    #ctaTxtWrapper p, #txtIn6 p {
+        font-size: 1.2em;
+    }
+}

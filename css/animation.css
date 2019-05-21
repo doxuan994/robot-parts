@@ -1,0 +1,149 @@
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+input { padding: 0; border: 0; }
+input[type=text] {
+    color: rgba(255, 255, 255, 0.5);
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+
+/*
+OnClick of the CTA button styling.
+The CTA text fades out.
+The CTA button also fades out.
+----------------------------------------------------------------------------*/
+.fadeOut {
+    animation: fadeOut 0.5s forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#ctaTxtWrapper {
+    position: absolute;
+    bottom: 15%;
+
+    left: 0;
+    right: 0;
+}
+
+#ctaBtnWrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#emailForm {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+#txtIn6 {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+Baby Children
+----------------------------------------------------------------------------- */
+#ctaBtn {
+    background-color: #7F1BCE;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    padding: 0.7em 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+/* The rectangle background with a round border at the corner. */
+#txtEntryFieldWrapper {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+    padding: 0.7em 0px;
+}
+
+#sendBtn {
+    background-color: #7F1BCE;
+    color: white;
+    border-radius: 40px;
+    padding: 0.7em 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+
+/*
+Baby baby Children
+----------------------------------------------------------------------------- */
+/* The actually input text that users enter their emails. */
+#txtEntryField {
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+#txtEntryField::placeholder { color: rgba(255, 255, 255, 0.5); }
+
+
+
+
+
+/* -----------------------------------------------------------------------------
+
+                        BEFORE & AFTER ANIMATIONS
+
+----------------------------------------------------------------------------- */
+
+
+/* Button animates to view 0.25s after CTA text animation is complete. */
+#ctaBtn     { display: none; }
+
+/* OnClick of the CTA button and form will show. */
+#emailForm  { display: none; }
+
+/* After the user types their email, the send button appears below the text entry field, to the right */
+#sendBtn    { display: none; }
+
+/*
+Before users typing their emails.
+The Rectangle & input is longer.
+------------------------------------------------------------------------------*/
+.txtEntryFieldWrapperBefore { width: 500px; }
+.txtEntryFieldBefore        { width: 440px; }
+
+/*
+After users typing their emails.
+The Rectangle & input is shorter and the SEND button is shown.
+------------------------------------------------------------------------------*/
+.txtEntryFieldWrapper   { width: 395px; margin-right: 5px; }
+.txtEntryField          { width: 335px; }
+#sendBtn                { width: 100px;  }
