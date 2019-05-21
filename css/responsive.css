@@ -46,6 +46,10 @@ html, body {
     transform: translate(-50%);
 }
 
+.fullrobo {
+    bottom: 25%;
+}
+
 .flyRobo {
     bottom: 50%;
 }
