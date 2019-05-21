@@ -69,7 +69,11 @@ Mobile Landscape
     }
 }
 
-
+@media only screen and (max-width: 600px) {
+    .robot {
+        bottom: 25%;
+    }
+}
 
 
 
