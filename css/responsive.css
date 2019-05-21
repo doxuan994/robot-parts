@@ -16,6 +16,9 @@ html, body {
     background-size: cover;
     height: 100%;
     width: 100%;
+
+
+    position: relative;
 }
 
 
@@ -34,6 +37,13 @@ html, body {
 
     top: 1em;
     left: 1em;
+}
+
+.robot {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
