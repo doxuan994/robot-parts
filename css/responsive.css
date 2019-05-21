@@ -97,4 +97,7 @@ Mobile Portrait
     .skyline {
         display: block;
     }
+    .robot {
+        bottom: 15%;
+    }
 }

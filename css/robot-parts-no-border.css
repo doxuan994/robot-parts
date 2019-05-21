@@ -4,18 +4,75 @@
     justify-content: center;
 }
 .NoBorderLArm {
-    margin-right:  -1em;
+    margin-right:  -16px;
 }
 .NoBorderHead {
-    margin-right: -1em;
+    margin-right: -16px;
 }
 .NoBorderRArm {
-    margin-left: 1em;
-    margin-right: 1.4em;
+    margin-left: 16px;
+    margin-right: 20px;
 }
 .NoBorderBattery {
-    margin-right: 1.4em;
+    margin-right: 20px;
 }
 .NoBorderBODY {
-    margin-right: 0.5em;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+.fullrobo2 {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .NoBorderLArm {
+        max-width: 28.22px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .NoBorderHead {
+        max-width: 51.87px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .NoBorderRLeg {
+        max-width: 13.97px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .NoBorderRArm {
+        max-width: 23.6px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    .NoBorderBattery {
+        max-width: 12.47px;
+        margin-right: 12px;
+        margin-left: 0;
+    }
+    .NoBorderBODY {
+        max-width: 26.78px;
+        margin-right: 6px;
+        margin-left: 0;
+    }
+    .NoBorderLLeg {
+        max-width: 13.97px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+
+    .fullrobo2 {
+        max-width: 69px;
+    }
 }
